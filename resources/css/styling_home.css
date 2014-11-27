@@ -1,0 +1,98 @@
+div.position_home
+{
+	position:absolute;
+	left:22%;
+	top:100px;
+	height:10px;
+}
+div.position_login
+{
+	position:absolute;
+	right:7%;
+	top:37px;
+	
+}
+
+div.position_signup
+{
+	position:fixed;
+	left:25%;
+	top:70px;
+        height:10px
+}
+
+div.position_form
+{
+position:absolute;
+left:25%;
+top:200px;
+}
+
+div.position_search
+{
+position:absolute;
+left:50%;
+top:205px;
+}
+
+
+
+div.xouter{
+width:25%;
+left: 30%;
+border:1px solid #000;
+}
+div.xleftcol
+{
+	float: left;
+	width:15%;
+	margin-left: 200px;
+	border:medium double #CCCCCC;
+	background-color: #FFFFFF;
+	background-image: url(../rsoft/resources/images/1.jpg);
+/*	background-image: url(hero_06_software.jpg);*/
+}
+div.xmiddlecol
+{
+float: left;
+width: 34%;
+background:#FFB6C1;
+}
+div.xrightcol
+{
+	float: right;
+	width:15%;
+	border:medium double #CCCCCC;
+	background-color: #FFFFFF;
+	background-image: url(../rsoft/resources/images/1.jpg);
+	clip: rect(auto,200px,auto,auto);
+	margin-top: auto;
+	margin-right: 200px;
+	margin-bottom: auto;
+	margin-left: auto;
+}
+
+font.upper
+{
+font-family:broadway;
+background-color:#87CEEB;
+font-size:18pt;
+}
+
+font.middle
+{
+font-family:arial;
+font-size:18pt;
+}
+
+input.btn 
+{ 
+background:#EE82EE;
+color:blue; 
+font: bold small 'trebuchet ms',helvetica,sans-serif;
+} 
+
+h2.s0{
+	background-color:#FFFFFF;
+	
+}

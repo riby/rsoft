@@ -1,0 +1,199 @@
+<html>
+<head>
+<title>
+<Website>
+</title>
+<link rel="stylesheet" type="text/css" href="../rsoft/resources/css/styling_home.css">
+<link rel="stylesheet" type="text/css" href="../rsoft/resources/css/style.css">
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive" />
+<meta name="keywords" content=" keywords here - SOME search engines still use them - and all search links count " />
+<meta name="description" content="Short description - often used by search engines as real description" />
+</head>
+<body>
+
+ <script type="text/Javascript">
+function focususername() {
+  if (document.login.username.value == "Username") {
+    document.login.username.value = "";
+  }
+}
+function blurusername() {
+  if (document.login.username.value == "") {
+    document.login.username.value = "Username";
+    document.login.sub.value = "Login";
+    document.login.sub.disabled = true;
+  }
+  else {
+    var username = document.login.username.value;
+    if (username.length >= 10) {
+      document.login.sub.value = "Login as " + username.substring(0,10) + " ..";
+    }
+    else {
+      document.login.sub.value = "Login as " + username + "";
+    }
+  }
+}
+function focuspassword() {
+  if (document.login.password.value == "Password") {
+    document.login.password.value = "";
+    if (document.login.username.value != "Username") {
+      document.login.sub.disabled = false;
+    }
+  }
+}
+function blurpassword() {
+  if (document.login.password.value == "") {
+    document.login.password.value = "Password";
+    document.login.sub.disabled = true;
+  }
+}
+function checkpassword() {
+    var curVal;
+  if (document.login.password.value == "") {
+    alert("Enter Password");}
+	else{
+	 curVal = document.login.username.value;
+	 if(/[^A-Za-z0-9 ]/.test(curVal)){
+		alert("username not alpha numeric");}
+		}	 
+	 
+}
+
+</script>
+
+
+<br><br>
+
+<div id="leftcontent"> 
+  <h2><u> <div align="center"> Catogeries</h2></u>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div align="center" id="buttons">
+    <a href="antiv.html" title="" >Antivirus</a><br>
+    <a href="drivers.html">Drivers</a><br>
+    <a href="torrents.html">Torrents</a> <br>
+    <a href="audio.html">Audio</a> <br>
+    <a href="messaging.html">Messaging</a> </div>
+</div>
+<div id="centercontent"> 
+<div class="position_home"><a href="index.html">HOME</a> 
+</div>
+<div class="position_login"><br>
+  &nbsp&nbsp;
+  <form name="login" method="post" action="http://localhost/xampp/project/dbcon/login.php">
+  <br>
+    <br>
+    <br>
+    <br>
+<b>Username</b>
+    <input type="text" value="Username" onFocus="focususername();" onBlur="blurusername();" size="15" name="username" maxlength="100">
+      <br>
+<b>Password</b>
+
+      <input type="password" value="Password" onFocus="focuspassword();" onBlur="blurpassword();" size="15" name="password"  maxlength="100">
+     <br>
+<br>
+<div align="center"> 
+      <input type="submit" value="Login" name="sub" onClick="checkpassword()">
+ </div>   
+</div>
+    <br>
+   <font size="+2" face="Geneva, Arial, Helvetica, sans-serif"><a href="main.html">HOME</a><br></font>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="position_search">
+            <div align="center">
+      <h2>Search Your Software</h2>
+      <input type="text" name="search" value="" id="Submit" size=35 maxlength=25>
+      <br>
+      <input type="submit" name="Submit2" value="Submit" id="Submit2">
+</div>    
+</div>
+  </form>
+</div>
+
+
+<div class="position_signup"> <b>New User? &nbsp&nbsp <a href="register.html">Signup</a> 
+</div>
+
+
+<br><br><br>
+<br>
+<br>
+<br><br><br><br><br><br><br>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div align="center">
+
+<div class="xleftcol">
+<div align="center">
+<h2 class="s0"><a href="http://www.filehippo.com/latest/">Latest updates</a></h2>
+
+</p>
+</div>
+</div>
+
+
+
+<div class="xrightcol">
+<div align="center">
+<h2 class="s0"><a href="http://www.filehippo.com/latest/">Latest updates</a></h2>
+</p>
+</div>
+
+</div>
+
+
+
+
+
+<div id="rightcontent"> <div align="center"
+<h2><u> New<br>
+    Launches!</h2></u>
+  <br>
+  <br>
+  <ul>
+    <li></li>
+    <br>
+    <br>
+    <li></li>
+    <br>
+    <br>
+    <li></li>
+    <br>
+    <br>
+    <li></li>
+    <br>
+    <br>
+    <li></li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+body
+{
+	background-image:url(../rsoft/resources/images/2.jpg);
+	font-family:Verdana, arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:black;
+}
+a:link {
+	color: #3886E0;
+}
+
+a:hover, {
+	text-decoration: underline;
+	color: #FF0000;
+}
+
+a:visited {
+	color: #3886E0;
+}
+
+
+
+
+
+#buttons a {
+	display: block;
+	float: left;
+	margin-left: 1px;
+	background: url(../rsoft/resources/images/header.jpg) repeat-x;
+	text-decoration: none;
+	width: 155px;
+        height: 40px;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 14px;
+	
+}
+#buttons a:hover {
+	width: 175px;
+    height: 40px;
+	background: #FFFFFF url(../rsoft/resources/images/header_r.jpg) repeat-x;
+}
+
+
+
+#leftcontent {
+	position: absolute;
+	left:0px;
+	top:110px;
+	width:180px;
+	height:550px;
+	border:0px solid darkblue;
+	background-color: #D7F6FB;
+	color:black;
+	background-image: url(1.jpg);
+
+}
+
+#centercontent {
+	position: absolute;
+	left:-89px;
+	top:-13px;
+	width:1262px;
+	height:110px;
+	border:0px solid darkblue;
+	background-image: url(../rsoft/resources/images/2.jpg);
+	background-color: CCCC99;
+}
+
+
+#rightcontent {
+	position: absolute;
+	right:0px;
+	top:110px;
+	width:180px;
+	height:550px;
+	border:0px solid darkblue;
+	background-color: d7f6fb;
+	background-image: url(../rsoft/resources/images/1.jpg);
+}
